@@ -70,6 +70,12 @@ function getConnectedEcholink($logLines) {
         return $users;
 }
 
+function getEcholinkCount($logLines) {
+	$getCount = getConnectedEcholink($logLines);
+	$count = count($getCount);
+	return $count;
+}
+
 function initModuleArray() {
 	// this initializes the active SvxLink module array for further use - move to tools.php?
 	$modules = Array();

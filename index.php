@@ -69,7 +69,14 @@ include "version.php";
     </div>
   </div>
   <div class="container-fluid">
-    <?php include "include/status.php"; ?>
+    <div class="row">
+      <div class="col-4">
+        <?php include "include/txstatus.php"; ?>
+      </div>
+      <div class="col-8">
+        <?php include "include/status.php"; ?>
+      </div>
+    </div>
   </div>
   <div class="container-fluid">
     <?php include "include/echolink.php"; ?>

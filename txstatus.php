@@ -5,9 +5,10 @@ include "include/tools.php";
 include "include/functions.php";
 
 $configs = getSvxConfig();
-$txStatus = getSvxTXLines();
+$logLines = getSvxTXLines();
+$txStatus = implode(" ", $logLines);
 
-if (in_array("ON", $txStatus)) {
+if (strpos($txStatus,"ON")) {
 	echo "<tr><td class=\"table-danger text-center\">ON</td></tr>";
 } else {
 	echo "<tr><td class=\"table-success text-center\">OFF</td></tr>";

@@ -48,6 +48,14 @@ function getSvxLog() {
         return $logLines;
 }
 
+function getSvxTXLines() {
+	// returns the SvxLink transmitter log lines
+	$logPath = SVXLOGPATH."/".SVXLOGPREFIX;
+	$logLines = explode(" ", `egrep -h "transmitter" $logPath | tail -1`);
+//	$logElem = explode(" ", $logLines);
+	return $logLines;
+}
+
 function getConnectedEcholink($logLines) {
 	// retrieves the current EchoLink users connected to the SvxLink
         $users = Array();

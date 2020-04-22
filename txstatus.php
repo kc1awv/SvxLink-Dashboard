@@ -8,9 +8,9 @@ $configs = getSvxConfig();
 $txStatus = getSvxTXLines();
 
 if (in_array("ON", $txStatus)) {
-	echo "<tr><td class=\"table-danger\">ON</td></tr>";
+	echo "<tr><td class=\"table-danger text-center\">ON</td></tr>";
 } else {
-	echo "<tr><td class=\"table-success\">OFF</td></tr>";
+	echo "<tr><td class=\"table-success text-center\">OFF</td></tr>";
 }
 
 ?>

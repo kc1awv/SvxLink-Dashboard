@@ -51,7 +51,7 @@ function getSvxLog() {
 function getSvxTXLines() {
 	// returns the SvxLink transmitter log lines
 	$logPath = SVXLOGPATH."/".SVXLOGPREFIX;
-	$logLines = explode(" ", `egrep -h "transmitter" $logPath | tail -1`);
+	$logLines = `egrep -h "transmitter" $logPath | tail -1`;
 	return $logLines;
 }
 

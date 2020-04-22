@@ -5,8 +5,7 @@ include "include/tools.php";
 include "include/functions.php";
 
 $configs = getSvxConfig();
-$logLines = getSvxTXLines();
-$txStatus = implode(" ", $logLines);
+$txStatus = getSvxTXLines();
 
 if (strpos($txStatus,"ON")) {
 	echo "<tr><td class=\"table-danger text-center\">ON</td></tr>";

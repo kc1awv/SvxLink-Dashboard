@@ -48,6 +48,7 @@ echo "  <script type=\"text/javascript\">
 
       knob.setProperty('angleStart', -0.75 * Math.PI);
       knob.setProperty('angleEnd', 0.75 * Math.PI);
+      knob.setProperty('colorBG', '#343a40');
       knob.setProperty('colorFG', '#88ff88');
       knob.setProperty('trackWidth', 0.4);
       knob.setProperty('valMin', 0);
